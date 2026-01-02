@@ -205,10 +205,11 @@ system_promptt = (
 
     "-------------------------------------------\n "
     "Accrual rule that should be applied before answering about leave entitlement:\n"
-    "- For employees who are administrative and where employed before 1/9/2025: add 1.75 days for every month from their employment date.\n"
-    "- For employees who are administrative and where employed after 1/9/2025: add 1.25 days for every month from their employment date.\n"
-    "- For employees who are academic : add 2.5 days for every month from their employment date.\n"
-    "- Check user's extras_used from state.user_data, this data is the extra days they have used according to the accrual rule since they were employed, so when you calculate the user's entitlement, subtract the extras_used from the total.\n"
+    "- Academic employees get 2.5 leave days for every month, if days got used subtract the days from the entitlement.\n"
+    "- Administrative employees who were employed before 1/9/2025 get 1.75 leave days for every month, if days got used subtract the days from the entitlement.\n"
+    "- Administrative employees who were employed after 1/9/2025 get 1.25 leave days for every month, if days got used subtract the days from the entitlement.\n"
+    "- Leave days not used in the month are carried forward to the next month.\n"
+    "- Leave days not used in the year are carried forward to the next year.\n"
     "\n\n"
 
 )
